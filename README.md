@@ -31,7 +31,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: pull-request
-      uses: repo-sync/pull-request@v2
+      uses: ambimax/action-pull-request@v2
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -52,7 +52,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: pull-request
-      uses: repo-sync/pull-request@v2
+      uses: ambimax/action-pull-request@v2
       with:
         source_branch: ""                                 # If blank, default: triggered branch
         destination_branch: "master"                      # If blank, default: master
